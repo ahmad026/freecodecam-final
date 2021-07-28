@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+.container {
+  height: auto;
+}
+
+/* navbar  */
+#navbar {
+  background-color: blueviolet;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+#navbar ul {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 40px;
+}
+#navbar ul li {
+  padding: 20px;
+  color: #fff;
+  list-style: none;
+  font-size: 1.6rem;
+}
+#navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+#navbar ul li a:hover {
+  border-bottom: 1px solid crimson;
+}
+/* section welcome  */
+#welcome-section {
+  background-image: url(img/wisuda.png);
+  background-size: cover;
+  height: 100vh;
+  padding-top: 100px;
+  color: #fff;
+  font-size: 1.7rem;
+}
+/* section project  */
+#projects {
+  background-color: rgb(231, 142, 8);
+  text-align: center;
+  width: 100%;
+}
+#projects .projects-header {
+  padding: 50px 0;
+  text-transform: uppercase;
+}
+#projects .git {
+  padding: 15px;
+  text-decoration: none;
+  color: #fff;
+  background-color: rgb(23, 53, 146);
+}
+#projects .git a {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+}
+.project-flex {
+  display: inline-block;
+}
+#projects .project-flex .project-tile {
+  width: 30px;
+}
+#projects .project {
+  display: inline-block;
+  max-width: 300px;
+  height: auto;
+  border: 1px solid crimson;
+}
+#projects img {
+  display: block;
+  width: 100%;
+}
+.img-project {
+  height: calc(100% - 6.8rem);
+  width: 100%;
+  object-fit: cover;
+}
+
+.project-title {
+  font-size: 2rem;
+  padding: 2rem 0.5rem;
+}
+
+/* section cantact */
+#contacts .contact {
+  margin: 0 auto;
+}
+.contact-header {
+  text-align: center;
+  padding: 50px 0;
+  text-transform: uppercase;
+}
+#contacts .contact-content {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
+#contacts .contact-content .column {
+  width: calc(50% - 30px);
+}
+
+#contacts .contact-content h2 {
+  margin-bottom: 20px;
+}
+
+#contacts .contact-content .left .icons {
+  margin: 10px 0;
+  text-align: center;
+}
+
+#contacts .left .icons .row {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+
+#contacts .left .icons .row img {
+  object-fit: cover;
+  width: 35px;
+  height: 35px;
+  border: 1px solid yellowgreen;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#contacts .left .icons .row .info {
+  text-align: initial;
+  font-size: 15px;
+  font-weight: 600;
+  padding-left: 20px;
+}
+
+.contact .right form .fields {
+  display: flex;
+}
+
+.contact .right form .field,
+.contact .right form .fields .field {
+  width: 100%;
+  height: 45px;
+  margin-bottom: 15px;
+}
+
+.contact .right form .textarea {
+  height: 80px;
+  width: 100%;
+}
+
+.contact .right form .nama {
+  margin-right: 10px;
+}
+
+.contact .right form .email {
+  margin-left: 10px;
+}
+
+.contact .right form .field input,
+.contact .right form .textarea textarea {
+  height: 100%;
+  width: 100%;
+  border: 2px solid darkcyan;
+  border-radius: 5px;
+  outline: none;
+  padding: 10px 20px;
+  font-size: 17px;
+}
+
+.contact .right form .button {
+  padding: 7px 25px;
+  font-size: 25px;
+  border: 2px solid darkcyan;
+  background: darkcyan;
+  border-radius: 5px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.contact .right form .button:hover {
+  color: darkcyan;
+  background: none;
+  border: 2px solid blueviolet;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+  background-color: black;
+  color: #fff;
+}
+
+@media (max-width: 720px) {
+  #contacts .contact-content {
+    height: auto;
+    display: block;
+  }
+  #contacts .contact-content .column {
+    width: auto;
+    text-align: center;
+  }
+
+  #navbar ul {
+    margin-right: 0;
+    display: inline-block;
+  }
+  #contacts .left .icons .row {
+    display: block;
+    text-align: center;
+    border: 1px solid crimson;
+  }
+  #contacts .row .info .ket,
+  .isi {
+    text-align: center;
+    display: block;
+  }
+}
